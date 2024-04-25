@@ -1,1 +1,2 @@
 If you want to play music, please save the music first, and then change the address of the music method in the music player, the address here is the address I save on the computer, can not be used. I added the try method, so it will show that it can't be found, but it doesn't affect the main program.
+By the way, I don't know how to delete the classes that I'm no longer using them any more(zombie), as well as wav(construction,legend,mild(1),piano they are better ones that use more space but have better sounds)
