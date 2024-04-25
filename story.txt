@@ -1,2 +1,5 @@
-kkkkkkkkkkkkkkk kkkkkkkkkkk 
-kkkkkkkkkkkk kkk
+GAME NAME: DEAD CITY
+INTRO:
+  In the year 2074, an unknown virus breaks out, countless people die from this unknown virus, and countless people are trapped in the blocked city. 
+  Twenty years later, the government prevents citizens from going out to find materials and restricts Internet communication, leading to the voice of resistance, 
+  and finally one day, the war breaks out, and your city is also involved, please try to escape from this dead city.

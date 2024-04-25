@@ -6,17 +6,16 @@ import java.util.ArrayList;
 
 public class musicPlayer {
 static ArrayList <String> amusic=new ArrayList<String>();
-        
 
         public static void playMusic() {
             try {
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\852124551-1-208-new.wav");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_370617035_da2-1-192.wav");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_403418950-1-208.wav");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_447059649_nb2-1-16.wav");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_447116833_nb2-1-16.wav");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_816636039-1-208.wav");
-                String a=amusic.get((int)(Math.random()*4));
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\piano.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\whisper.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\legend.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\mild.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\scientific.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\constriction.wav");
+                String a=amusic.get((int)(Math.random()*6));
                 File file = new File(a);
                 if (file.exists()) {
                     AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
@@ -32,14 +31,13 @@ static ArrayList <String> amusic=new ArrayList<String>();
         }
         public static void playMusic(int choice) {
             try {
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\852124551-1-208-new.m4a");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_370617035_da2-1-192.mp3");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_403418950-1-208.mp3");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_447059649_nb2-1-16.mp3");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_447116833_nb2-1-16.mp3");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_448103635-1-208.mp3");
-                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\贝贝_816636039-1-208.mp3");
-                String a=amusic.get((int)(choice%7));
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\piano.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\whisper.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\legend.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\mild.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\scientific.wav");
+                amusic.add("C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\constriction.wav");
+                String a=amusic.get((int)(choice%6));
                 File file = new File(a);
                 if (file.exists()) {
                     AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
@@ -50,6 +48,20 @@ static ArrayList <String> amusic=new ArrayList<String>();
                     System.out.println("?:" + a);
                 }
             } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        public static void playEnding(){
+            try{
+                String a="C:\\Users\\kevin\\Desktop\\JavaProgram\\Musc\\piano.wav";
+                File file = new File(a);
+                if (file.exists()) {
+                    AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
+                    Clip clip = AudioSystem.getClip();
+                    clip.open(audioStream);
+                    clip.start();
+                }
+            }catch (Exception e) {
                 e.printStackTrace();
             }
         }

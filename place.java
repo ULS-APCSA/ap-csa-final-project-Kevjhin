@@ -33,6 +33,25 @@ public class place {
         return pr;
     }
 
+    public int chanceCalculator(int a){
+        int s1=getS1(a);
+        int s2=getS2(a);
+        int bad=getBad(a);
+        int chance=(int)(Math.random()*100);
+        int num=4;
+        if(chance<s1){
+            num=1;
+        }else{
+            if(chance<s2){
+                num=2;
+            }else{
+                if(chance<bad){
+                    num=3;
+                }
+            }
+        }
 
+        return num;
+    }
 
 }
